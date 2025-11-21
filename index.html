@@ -4,39 +4,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>虎老彥</title>
-	<link rel="icon" type="image/png" href="">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	<div class="虎老彥">
+	<div class="logo">
 	<center>
-		<img src="images/虎老彥.png" alt="虎老彥" width="500px" height="155px">
+		<img src="images/logo.png" alt="虎老彥" width="500px" height="155px">
 	</center>
 	</div>
 
 	<div class="applications">
 		<button id="Internet Explorer">
-		<a href="">
-		<img src="images/iexplore.exe_14_32528-6.png" width="50px"></a>
-		<br>
-		<a href="">Internet<br>Explorer</a>
+		<img src="images/iexplore.exe_14_32528-6.png" width="50px">
+		<br>Internet<br>Explorer
 		</button>
 		<br>
 		<br>
-	<button class="modal-button" id="關於古卡羅" href="#modal2">
-		<a class= "關於古卡羅">
-		<img src="images/shell32.dll_14_152-5.png" width="50px"></a>
-		<br>
-		<a class= "關於古卡羅">關於古卡羅</a>
+	<button class="modal-button" href="#modal1" id="notepad">
+		<span>關於古卡羅</span>
 	</button>	
 		<br>
 		<br>
 		<br>
-	<button class="modal-button" href="#modal3">
-		<a>
-		<img src="images/12.png" width="50px"></a>
-		<br>
-		<a>虎老彥</a>
+	<button class="modal-button" href="#modal2" id="clip">
+		<span>虎老彥</span>
 	</button>
 	</div>
 
@@ -48,36 +41,30 @@
 	<center>
 
 		<a href="about.html">
-		<img src="images/explorer.exe_14_252-3.png" width="50px"></a>
-		<br>
-		<a href="about.html">about關於</a>
-
+		<img src="images/explorer.exe_14_252-3.png" width="50px">
+		<br>about關於</a>
 		<br>
 		<br>
 		<br>
 		<a href="animation.html">
-		<img src="images/explorer.exe_14_252-3.png" width="50px"></a>
-		<br>
-		<a href="animation.html">animation<br>動畫</a>
+		<img src="images/explorer.exe_14_252-3.png" width="50px">
+		<br>animation<br>動畫</a>
 		<br>
 		<br>
 		<a href="audio.html">
-		<img src="images/explorer.exe_14_252-3.png" width="50px"></a>
-		<br>
-		<a href="audio.html">audio伴音</a>
+		<img src="images/explorer.exe_14_252-3.png" width="50px">
+		<br>audio伴音</a>
 		<br>
 		<br>
 		<br>
 		<a href="mv.html">
-		<img src="images/explorer.exe_14_252-3.png" width="50px"></a>
-		<br>
-		<a href="mv.html">music video<br>音樂視頻</a>
+		<img src="images/explorer.exe_14_252-3.png" width="50px">
+		<br>music video<br>音樂視頻</a>
 		<br>
 		<br>
 		<a href="superpower.html">
-		<img src="images/explorer.exe_14_252-3.png" width="50px"></a>
-		<br>
-		<a href="superpower.html">superpower<br>超能力</a>
+		<img src="images/explorer.exe_14_252-3.png" width="50px">
+		<br>superpower<br>超能力</a>
 
 	</center>
 	</div>
@@ -90,20 +77,32 @@
 
 </div>
 
-	<div class="modal2" id="modal">
-		<span class="close">&times;</span>
-		<img src="images/關於古卡羅.png" width="535px">
-	</div>
 
-	<div class="modal4" id="modal">
-		<span class="close">&times;</span>
-		<img src="images/about.png" width="661px" usemap="#about關於">
+<div id="modal1" class="modal">
+	<div class="modal-content">
+		<div class="modal-header" id="modal1header">
+			<span class="close">&times;</span>
+			<img src="images/about-karlo-header.png" width="535px">
+		</div>
+		<div class="modal-body">
+			<img src="images/about-karlo-body.png" width="535px" draggable="false">
+		</div>
+		<div class="modal-footer" style="display:none"></div>
 	</div>
+</div>
 
-		<map name="about關於">
-			<area shape="rect" coords="223,128,343,166" href="biography.html">
-			<area shape="rect" coords="441,128,560,166" href="reference.html">
-		</map>
+<div id="modal2" class="modal">
+	<div class="modal-content">
+		<div class="modal-header" id="modal2header">
+			<span class="close2">&times;</span>
+			<img src="images/cspheader.png" width="1280px">
+		</div>
+		<div class="modal-body">
+			<img src="images/cspbody.png" width="1280px" draggable="false">
+		</div>
+		<div class="modal-footer" style="display:none"></div>
+	</div>
+</div>
 
 	<br>
 	<div class="copyright">

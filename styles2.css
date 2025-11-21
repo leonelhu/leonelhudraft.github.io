@@ -14,7 +14,9 @@
 }
 
 body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/sky_hiru.png);
-	background-size: cover;}
+	background-size: cover;
+	cursor: url(images/default_arrow.cur), default;	
+}
 
 .applications{display: block;
 	width: 100px;
@@ -26,6 +28,44 @@ body{background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
 	z-index: -1;
 	}
 	
+#notepad{
+	position: relative;
+	width: 95px;
+	height: 71px;
+	background-image: url(images/shell32.dll_14_152-5.png);
+	background-size: 50px auto;
+	background-position: center top 0px;
+	background-repeat: no-repeat;
+}
+
+#notepad span{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+	pointer-events: none;
+}
+
+#clip {
+	position: relative;
+	width: 60px;
+	height: 71px;
+	background-image: url(images/clip.png);
+	background-size: 50px auto;
+	background-position: center top 0px;
+	background-repeat: no-repeat;
+}
+
+#clip span{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	bottom: 0;
+	pointer-events: none;
+}
+	
 button{display: inline;
 	background: none; 
 	padding: 0;
@@ -35,7 +75,16 @@ button{display: inline;
 	outline: none;
 	border-radius: 0;
 	cursor: pointer;
+	font-family: 'Fusion Pixel 12';
+	font-size: 18px;
+	text-shadow: 1px 1px #000000;
+	color: #ffffff;
 	}
+	
+area {
+	cursor: url(images/default_link.cur), pointer;
+	display: block;
+}	
 	
 .name{color: #ffffff;
 	text-shadow: 1px 1px #000000;
@@ -100,7 +149,9 @@ button{display: inline;
 a{font-family: 'Fusion Pixel 12';
 	font-size: 18px;
 	color: #000000;
-	text-decoration: none;}
+	text-decoration: none;
+	cursor: url(images/default_link.cur), pointer;
+}
 	
 h1{font-family: 'Pixelated Times New Roman';
 	font-size: 80px;
@@ -117,4 +168,31 @@ ul{font-family: 'Pixelated Times New Roman';
 
 .chinese{font-family: 'Taipei24';
 	font-size: 25px;
+}
+
+::-webkit-scrollbar {
+	width: 16px;
+	background-image: linear-gradient(to right, #eceef3, #fbfbfe);
+	border: 1px solid #e5e6ed;
+}
+
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right, #ffffff, #cdcedb);
+	border: 1px solid #9495a1;
+	border-radius: 2px;
+	}
+
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement {
+    display: block
+}
+
+::-webkit-scrollbar-button:vertical:start {
+	height: 17px;
+	background-image: url(images/scroll-arrow-up.png);
+}
+
+::-webkit-scrollbar-button:vertical:end {
+	height: 17px;
+	background-image: url(images/scroll-arrow-down.png);
 }
