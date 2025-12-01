@@ -6,11 +6,7 @@
 	<title>superpower超能力</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles2.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
+    <script src="superpower.js"></script>
 </head>
 <body>
 
@@ -33,14 +29,14 @@
 	</div>
 
 <div class="titlebar">
-		<img src="images/titlebar-superpower.png" width="1280px" usemap="#titlebar">
+		<img src="images/titlebar-superpower.png" width="1280px" usemap="#titlebar" draggable="false">
 		<map name="titlebar">
 			<area shape="rect" coords="1257,2,1278,23" href="index.html">
 		</map>
 	</div>
 	
 <div class="menubar">
-	<img src="images/menubar.png" width="1278px">
+	<img src="images/menubar.png" width="1278px" draggable="false">
 </div>	
 	
 <div class="container">
@@ -87,21 +83,79 @@
 </div>
 
 <div class="content">
+<div class="superpower">
 
-<br>
-
+<div>
 	<h1>superpower<span class="title">超能力</span></h1>
-	<p>這是虎老彥的超能力！</p>
-	<br>
 	
-	<div id="superpower">
-    </div>
+<div class="vision">
+<script src="superpower.js"></script>
+	<div class="base">
+		<img src="images/superpower/base.png" width="500px" draggable="false">
+	</div>
+	
+	<div class="pupils">
+		<div class="socket">
+			<div class="pupil">
+				<img src="images/superpower/pupil.png" width="30px" draggable="false">
+			</div>
+		</div>
+		<div class="socket">
+			<div class="pupil">
+				<img src="images/superpower/pupil.png" width="30px" draggable="false">
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="shadow">
+		<img src="images/superpower/shadow.png" width="500px" draggable="false">
+	</div>
+	<div class="face">
+		<input type="button"/>
+	</div>
+	<div class="glasses" id="glasses">
+		<img src="images/superpower/glasses.png" width="433px" draggable="false">
+	</div>
+</div>
+	<br>
+	<div class="controls">
+		<p>
+		<ul style="list-style-type: none; margin: 0; padding: 0;">
+		<li>move cursor around to make eyes follow</li>
+		<li>click on his face to make him blink</li>
+		<li>click <button onclick="myFunction()" class="toggle" style="all: unset;cursor: url(images/default_link.cur), pointer;"><u>here</u></button> to toggle no glasses/glasses</li>
+		</ul>
+		</p>
+	</div>
+	<br>
+	<br>
+	<p>
+	<ul style="list-style-type: none; margin: 0; padding: 0;">
+	<li>Leonel's superpower is having super vision! He was born with significantly
+	better eyesight than anyone else: he can see precise details from far away, which makes
+	him very attentive. His vision is like a camera! However, this doesn't come with consequences.
+	His eyes are extremely sensitive to light, and using too much of this power causes him
+	to have headaches and dizziness. It also makes him look very haggard! That's why he
+	wears special glasses that help him suppress this power, making his vision like a normal
+	human's. He mostly uses them in the office and indoors, since he doesn't like wearing
+	glasses around other people.</li>
+	<li>Leonel<span class="chinese">的超能力是擁有超視覺！ 他天生的視力比任何人都好：他可以從遠處看到
+	精確的細節，這讓他非常專注。 他的視野就像一臺相機！ 然而，這並沒有帶來後果。 他的眼睛對光線非常敏感，
+	過度使用這種能量會導致他頭痛和頭暈。 這也讓他看起來很憔悴！這就是為什麼他戴著特殊的眼鏡來幫助他抑制這種
+	力量，使他的視力像正常人一樣。 他大多在辦公室和室內使用眼鏡，因為他不喜歡在別人身邊戴眼鏡。</span></li>
+	</ul>
+	</p>
+</div>
+	
+	
+</div>
 
 </div>	
 
 <div>
 	<center>
-	<img src="images/statusbar.png" width="1280px">
+	<img src="images/statusbar.png" width="1278px">
 	</center>
 </div>
 

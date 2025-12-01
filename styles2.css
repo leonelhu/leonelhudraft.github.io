@@ -99,7 +99,7 @@ area {
 }
 
 .content{position: relative;
-	width: 1276px;
+	width: 1274px;
 	height: 945px;
 	margin: auto;
 	border: 1px solid #716F65;
@@ -146,6 +146,102 @@ area {
 	justify-content: center;
 }
 
+.animation{display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 854px;
+}
+
+.youtube{display: flex;
+	justify-content: center;
+}
+
+.audio{display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 1000px;
+}
+
+.cover{display: flex;
+	justify-content: center;
+}
+
+.superpower{display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 1000px;
+}
+
+.vision{position: relative;
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+.base{position: absolute;}
+
+.pupils{display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 170px
+}
+
+.socket{position: relative;
+	width: 63px;
+	height: 66px;
+	top: 164px;
+}
+
+.pupil{position: absolute;
+	width: 30px;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shadow{position: absolute;
+	mix-blend-mode: multiply;
+	top: 0px;
+}
+
+.face input{background: url(images/superpower/face.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 500px;
+	height: 500px;
+	border: hidden;
+	position: absolute;
+	top: 0px;
+}
+
+.face input:active{background: url(images/superpower/blink.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 500px;
+	height: 500px;
+	border: hidden;
+	position: absolute;
+	top: 0px;
+}
+
+.glasses{position: absolute;
+	top: 175px;
+	left: 33px;
+}
+
+.controls{display: flex;
+	margin: auto;
+	width: 500px;
+}
+
 a{font-family: 'Fusion Pixel 12';
 	font-size: 18px;
 	color: #000000;
@@ -181,6 +277,12 @@ ul{font-family: 'Pixelated Times New Roman';
 	border: 1px solid #9495a1;
 	border-radius: 2px;
 	}
+	
+::-webkit-scrollbar-thumb:active {
+	background-image: linear-gradient(to right, #cdcedb, #ffffff);
+	border: 1px solid #5d6665;
+	border-radius: 2px;
+	}
 
 ::-webkit-scrollbar-button:vertical:end:increment,
 ::-webkit-scrollbar-button:vertical:start:decrement {
@@ -192,7 +294,17 @@ ul{font-family: 'Pixelated Times New Roman';
 	background-image: url(images/scroll-arrow-up.png);
 }
 
+::-webkit-scrollbar-button:vertical:start:active {
+	height: 17px;
+	background-image: url(images/scroll-arrow-up-active.PNG);
+}
+
 ::-webkit-scrollbar-button:vertical:end {
 	height: 17px;
 	background-image: url(images/scroll-arrow-down.png);
+}
+
+::-webkit-scrollbar-button:vertical:end:active {
+	height: 17px;
+	background-image: url(images/scroll-arrow-down-active.PNG);
 }
